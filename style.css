@@ -16,9 +16,49 @@ header {
 header h1 {
   font-size: 36px;
 }
-header p {
+header p,
+.card > p {
   color: hsl(229, 6%, 66%);
 }
 .heading-main {
   font-weight: 200;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px -7px;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+}
+.green {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.red {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.orange {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.blue {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.card > img {
+  margin-top: 1rem;
+  width: 70px;
+  align-self: end;
 }
